@@ -1,0 +1,282 @@
+*{
+	padding:0;
+	margin:0;
+	list-style:none;
+	text-decoration:none;
+	font-family:"微软雅黑";
+}
+
+body{
+	background:#4a607b;
+}
+
+a{
+	color:#222;
+}
+/*************头部样式***********/
+#header{
+	width:930px;
+	height:60px;
+	margin:100px auto 15px;
+	background:#fff;
+
+}
+
+#list_parent{
+	position:relative;
+	float:left;
+}
+#list_head {
+	width:60px;
+	height:60px;
+	background:url('../images/list01.png') 0 0 no-repeat;
+	cursor:pointer;
+	float:left;
+}
+
+#list_body{
+	position:absolute;
+	top:60px;
+	width:225px;
+	height:490px;
+	border-top:2px solid #4a607b;
+	background-color:#c5cdd1;
+	display:none;
+	z-index:20;
+}
+#list_body ul li.list_body_parent .list_body_head{
+	width:100%;
+	height:60px;
+	line-height:60px;
+	border-bottom:1px solid #c5cdd1;
+	background-color:#fff;
+	text-align:center;
+	box-shadow:1px 1px 1px #555;
+}
+#list_body ul li.list_body_parent .list_body_head:hover{
+	background-color:#56ccc8;
+	color:#fff;
+	font-weight:bold;
+	cursor:pointer;
+}
+
+#list_body .list_body_body{
+	position:absolute;	
+	background:#152840;
+	width:190px;
+	//text-align:center;
+	padding-left:50px;
+}
+#list_body .list_body_body>ul li {
+	height:40px;
+	line-height:40px;
+	border-bottom:1px solid #666;
+}
+#list_body .list_body_body a{
+	color:#fff;
+}
+#list_body .list_body_body a:hover{
+	color:#56ccc8;
+}
+#works{
+	top:60px;
+	left:225px;
+	display:none;
+}
+#IT_technology{
+	top:120px;
+	left:225px;
+	display:none;
+}
+#something{
+	top:181px;
+	left:225px;
+	display:none;
+}
+
+#nav_head{
+	float:left;
+}
+#nav_head ul{
+	padding-left:50px;
+	height:60px;
+}
+#nav_head ul li{
+	float:left;
+	height:60px;
+	line-height:60px;
+	text-align:center;
+	width:90px;
+}
+/*
+#nav_head ul li a{
+	display:block;
+	width:90px;
+	height:60px;
+}
+#nav_head ul li a:hover{
+	background:#56ccc8;
+	color:#fff;
+}
+*/
+#nav_head ul li a:hover{
+	color:#56ccc8;
+}
+#call_me{
+	float:right;
+	margin-right:10px;
+}
+#call_me ul li{
+	float:left;
+	height:60px;
+	line-height:60px;
+	
+}
+
+
+/********主体内容**********/
+/****轮播图****/
+#rotation{
+	width:930px;
+	height:450px;
+	margin:0px auto;
+	display:relative;
+	//overflow:hidden;
+	//border:1px solid #4a607b;
+	//background:url("../images/rotation/bg_all.png") 0 -30px no-repeat;
+}
+#bg_pic{
+	width:930px;
+	height:450px;
+	overflow:hidden;
+	position:relative;
+	//background:url("../images/rotation/bg_all.png") 0 -30px no-repeat;
+}
+#bg_pic img{
+	position:absolute;
+	top:-30px;
+}
+#rotation span{
+	display:block;
+	position:absolute;
+	width:30px;
+	height:50px;
+	cursor:pointer;
+	opacity:0.5;
+}
+#rotation .bt_l{
+	top:392px;
+	left:193px;
+	background:url("../images/rotation/button_l.gif") 0 0 no-repeat;
+}
+#rotation .bt_l:hover{
+	opacity:1;
+}
+#rotation .bt_r{
+	top:392px;
+	right:193px;
+	background:url("../images/rotation/button_r.gif") 0 0 no-repeat;
+}
+#rotation .bt_r:hover{
+	opacity:1;
+}
+/****中部内容****/
+
+#content_middle{
+	height:300px;
+	width:930px;
+	margin:15px auto;
+	//border:1px solid #fff;
+}
+#content_middle .md_content{
+	float:left;
+	//background-color:#fff;
+}
+#content_clndr{
+	width:300px;
+	height:300px;
+}
+#content_resume{
+	width:180px;
+	height:210px;
+	margin-left:15px;
+	color:#fff;
+	padding:45px 60px 45px 60px;
+	background-color:#1f3045;
+}
+#content_resume p{
+	word-wrap:break-word;
+	//word-break:break-all;
+}
+#content_resume p a{
+	font-size:13px;
+	color:#fff;
+}
+#content_resume p a:hover{
+	color:#4fc6f8
+}
+
+#content_works{
+	width:170px;
+	height:195px;
+	padding:60px 65px 45px 65px;
+	margin-left:15px;
+	background-color:#ea6060;
+	color:#fff;
+}
+#content_works p{
+	margin-top:10px;
+	font-size:23px;
+}
+#content_works p a{
+	color:#fff;
+}
+#content_works p a:hover{
+	color:#4fc6f8;
+	cursor:pointer;
+}
+#content_works span{
+	margin-bottom:0px;
+}
+
+
+/*****下部内容****/
+#content_bottom{
+	width:930px;
+	height:465px;
+	//border:1px solid #fff;
+	margin:0 auto;
+}
+#content_bottom .c_b{
+	float:left;
+}
+#c_b_technology{
+	width:300px;
+	height:465px;
+	background:#fff;
+}
+#c_b_somthings{
+	width:615px;
+	height:465px;
+	margin-left:15px;
+}
+#interset{
+	width:615px;
+	height:300px;
+	background:#fff;
+}
+#callMeBy{
+	margin-top:15px;
+	width:615px;
+	height:150px;
+	background:#fff;	
+}
+
+
+
+
+
+
+
+
+
