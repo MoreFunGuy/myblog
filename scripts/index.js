@@ -33,13 +33,13 @@ var bt_r = document.querySelector("#rotation .bt_r");
 //var bt_l = document.querySelector("#rotation .bt_r");
 var moveCount = 0;
 var  bg_pic_img = document.getElementById("bg_pic_img");
-bt_l.onclick = function(){
+bt_r.onclick = function(){
 		if(moveCount<3){			
 			moveCount++;		
 			moveElement("bg_pic_img",-930*moveCount,-30,10);
 		}
 };
-bt_r.onclick = function(){
+bt_l.onclick = function(){
 	if(moveCount>0){		
 		moveCount--;
 		moveElement("bg_pic_img",-930*moveCount,-30,10);
