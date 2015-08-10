@@ -166,7 +166,7 @@ a{
 }
 #rotation .bt_l{
 	top:392px;
-	left:193px;
+	left:210px;
 	background:url("../images/rotation/button_l.gif") 0 0 no-repeat;
 }
 #rotation .bt_l:hover{
@@ -174,7 +174,7 @@ a{
 }
 #rotation .bt_r{
 	top:392px;
-	right:193px;
+	right:210px;
 	background:url("../images/rotation/button_r.gif") 0 0 no-repeat;
 }
 #rotation .bt_r:hover{
