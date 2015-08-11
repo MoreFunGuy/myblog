@@ -45,8 +45,30 @@ bt_l.onclick = function(){
 		moveElement("bg_pic_img",-930*moveCount,-30,10);
 	}
 };
+//杂七杂八中小图放大
+var spiderMan = document.getElementById("spiderMan");
+spiderMan.onmouseover = function(){
+	document.getElementById("mdspiderMan").style.display = "block";
+}
+spiderMan.onmouseout = function(){
+	document.getElementById("mdspiderMan").style.display = "none";
+}
 
+var madilyn = document.getElementById("madilyn");
+madilyn.onmouseover = function(){
+	document.getElementById("mdmadilyn").style.display = "block";
+}
+madilyn.onmouseout = function(){
+	document.getElementById("mdmadilyn").style.display = "none";
+}
 
+var byx = document.getElementById("byx");
+byx.onmouseover = function(){
+	document.getElementById("mdbyx").style.display = "block";
+}
+byx.onmouseout = function(){
+	document.getElementById("mdbyx").style.display = "none";
+}
 
 
 
