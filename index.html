@@ -81,7 +81,11 @@
 				<span class="bt_r"></span>
 			</div>
 			<div id="content_middle">
-				<div id="content_clndr" class="md_content"></div>
+				<div id="content_clndr" class="md_content">
+					<video width="300px" height="300px" controls poster="images/video_pic.gif">
+						<source src="videos/video1.mp4"/>
+					</video>
+				</div>
 				<div id="content_resume" class="md_content">
 					<h2>个人简历</h2>
 					<br>
@@ -161,17 +165,33 @@
 							</li>
 						</ul>
 					</div>
-					<div id="callMeBy"></div>
+					<div id="callMeBy">
+						<form>
+							<input type="text" value="Your Name..." class="name "/>
+							<input type="text" value="Your github..." class="github "/>
+							<input type="text" value="Your Email..." class="email right"/>
+							<textarea  class="question">Your question...</textarea>
+							<input type="submit" class="submit right"/>
+						</form>
+					</div>
 				</div>
 			</div>	
 		</div>
-		
-		
-		
 		<div id="footer">
-			<br><br>
-			<br><br>
-			<br><br>
+			<div id="shareBlog">
+				<ul> 
+					<li>分享Blog:</li>
+					<li><a href="http://hikejun.com/">kejun(前端大神)</a></li>
+					<li><a href="http://html5ify.com/">Html5fiy(《深入浅出Node.js》作者,大牛)</a></li>
+					<li><a href="http://evilcos.me/">EVILCOS(安全、架构、团队的各种观点与分享)</a></li>
+					<li><a href="http://www.cssforest.org/">cssforest(前端博客)</a></li>
+				</ul>
+			</div>
+			<br>
+			<br>
+		</div>
+		<div id="HappyBirthday">
+			<h1>老妈生日快乐!</h1>
 		</div>
 		<script src="scripts/index.js"></script>
 		
