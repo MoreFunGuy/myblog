@@ -69,6 +69,78 @@ byx.onmouseover = function(){
 byx.onmouseout = function(){
 	document.getElementById("mdbyx").style.display = "none";
 }
+/****表单中文字获取焦点后消失****/
+var userName = document.getElementsByTagName("input")[0];
+var github = document.getElementsByTagName("input")[1];
+var email = document.getElementsByTagName("input")[2];
+var question = document.getElementsByTagName("textarea")[0];
+question.defaultValue = "Your question...";
+//姓名、github账号、邮箱
+userName.onfocus = function(){
+	if(this.value == "Your Name..."){
+		this.value = "";
+	}
+};
+userName.onblur = function(){
+	if(this.value == ""){
+		this.value = "Your Name..."
+	}
+};
+github.onfocus = function(){
+	if(this.value == "Your github..."){
+		this.value = "";
+	}
+};
+github.onblur = function(){
+	if(this.value == ""){
+		this.value = "Your github..."
+	}
+};
+email.onfocus = function(){
+	if(this.value == "Your Email..."){
+		this.value = "";
+	}
+};
+email.onblur = function(){
+	if(this.value == ""){
+		this.value = "Your Email..."
+	}
+};
+//建议
+question.onfocus = function(){
+	if(this.value == "Your question..."){
+		this.value = "";
+	}
+};
+question.onblur = function(){
+	if(this.value == ""){
+		this.value = "Your question..."
+	}
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
