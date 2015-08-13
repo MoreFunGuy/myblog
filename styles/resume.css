@@ -1,0 +1,122 @@
+*{
+	word-wrap:break-word;
+}
+.left{
+	float:left;
+}
+.right{
+	float:right;
+}
+.md_title{
+	color:#1b579e;
+	font-size:24px;
+	font-weight:bold;
+	border-bottom:3px dotted #c2c2c2;
+	padding-bottom:10px;
+}
+
+
+#content{
+	width:930px;
+	height:3000px;
+	background-color:#fff;
+	margin:0 auto;
+	position:relative;
+}
+#content .title{
+	width:956px;
+	height:100px;
+	position:absolute;
+	left:-13px;
+	background:url('../images/resume/resume_bg.jpg') 0 0 no-repeat;
+}
+/***简历内容***/
+/****名字和联系方式****/
+#content .info{
+	width:930px;
+	height:210px;
+	padding-top:100px;
+}
+#content .info .name_job{
+	width:420px;
+	height:210px;
+	padding-left:45px;
+	padding-top:20px;
+}
+#content .info .name_job h1{
+	color:#022e63;
+	font-size:60px;
+}
+#content .info .name_job h3{
+	margin-top:15px;
+	font-size:23px;
+	color:#898989;
+}	
+#content .info .contact_way{
+	width:420px;
+	height:230px;
+	margin-right:40px;
+}
+#content .info .contact_way p{
+	font-size:17px;
+	color:#022e63;
+	font-weight:bold;
+	border-bottom:2px solid #022e63;
+	padding-bottom:5px;
+}
+
+#content .info .contact_way ul li{
+	height:50px;
+	padding-top:2px;
+	padding-bottom:2px;
+	border-bottom:1px solid #e8e6e6;
+}
+.c_w{
+	font-size:14px;
+	font-weight:bold;
+	margin-bottom:5px;
+}
+.c_w_info{
+	font-size:14px;
+	color:#898989;
+}
+/****简历详情****/
+#content .detail .self_intro{
+	width:385px;
+	height:290px;
+//	background:#ccc;
+	padding-left:45px;
+}
+#content .detail .self_intro div{
+	padding-left:150px;
+	padding-top:15px;
+	color:#898989;
+	font-size:14px;
+}
+#content .detail .skill{
+	width:420px;
+	height:290px;
+//	background:#ccc;
+	margin-right:40px;
+}
+#content .detail .skill ul{
+	padding-top:15px;
+	font-size:14px;
+	font-weight:bold;
+}
+#content .detail .skill ul li{
+	height:28px;
+}
+#content .detail .skill ul li .right{
+	margin-right:30px;
+}
+
+
+
+
+
+
+
+
+
+
