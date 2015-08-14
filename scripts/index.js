@@ -25,7 +25,20 @@ for(var i=0;i<lbp.length;i++){
 		this.childNodes[3].style.display = "none";
 	};
 }
-
+//加几个链接
+var listHeads = document.querySelectorAll(".list_body_head");
+listHeads[0].onclick = function(){
+	location.assign("http://www.syc1992.com/pages/resume.html");
+};
+listHeads[1].onclick = function(){
+	location.assign("http://www.syc1992.com/pages/works.html");
+};
+listHeads[2].onclick = function(){
+	location.assign("http://www.syc1992.com/pages/IT_technology.html");
+};
+listHeads[3].onclick = function(){
+	location.assign("http://www.syc1992.com/pages/something.html");
+};
 //大轮播图	
 
 var bt_l = document.querySelector("#rotation .bt_l");
