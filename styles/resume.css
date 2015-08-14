@@ -18,7 +18,7 @@
 
 #content{
 	width:930px;
-	height:3000px;
+	height:2000px;
 	background-color:#fff;
 	margin:0 auto;
 	position:relative;
@@ -36,6 +36,7 @@
 	width:930px;
 	height:210px;
 	padding-top:100px;
+	//background:#ccc;
 }
 #content .info .name_job{
 	width:420px;
@@ -67,7 +68,7 @@
 
 #content .info .contact_way ul li{
 	height:50px;
-	padding-top:2px;
+	padding-top:10px;
 	padding-bottom:2px;
 	border-bottom:1px solid #e8e6e6;
 }
@@ -84,7 +85,7 @@
 #content .detail .self_intro{
 	width:385px;
 	height:290px;
-//	background:#ccc;
+	//background:#aaa;
 	padding-left:45px;
 }
 #content .detail .self_intro div{
@@ -96,7 +97,7 @@
 #content .detail .skill{
 	width:420px;
 	height:290px;
-//	background:#ccc;
+	//background:#aaa;
 	margin-right:40px;
 }
 #content .detail .skill ul{
@@ -111,12 +112,147 @@
 	margin-right:30px;
 }
 
-
-
-
-
-
-
+/**教育及工作经历**/
+#content .detail .education{
+	width:385px;
+	height:260px;
+	//background:#ddd;
+	padding-left:45px;
+	padding-top:20px;
+}
+#content .detail .experience{
+	padding-top:20px;
+	width:420px;
+	height:260px;
+	//background:#ddd;	
+	margin-right:40px;
+} 
+#content .detail .organization{
+	font-size:20px;
+	color:#000;
+	font-weight:bold;
+	margin-top:20px;
+}
+#content .detail .organization .during{
+	display:inline-block;
+	font-size:13px;
+	width:80px;
+	height:30px;
+	line-height:30px;
+	text-align:center;
+	border-radius:3px;
+	background:#898989;
+	color:#fff;
+}
+#content .detail .major{
+	margin-top:20px;
+	font-size:16px;
+}
+#content .detail .description{
+	margin-top:20px;
+	font-size:13px;
+	color:#757575;
+}
+/****技术学习路线****/
+#content .detail .learingLine{
+	width:850px;
+	height:1000px;
+	padding-left:45px;
+	//border:1px solid #000;
+	background:url('../images/resume/timeLine01.gif') 100px 100px no-repeat;
+}
+/****时间线****/
+#content .detail .learingLine ul li{
+	height:100px;
+	position:relative;
+}
+#content .detail .learingLine ul li .time{
+	display:block;
+	background:url('../images/resume/timeLine_time.gif') 0 0 no-repeat;
+	width:50px;
+	height:50px;
+	line-height:50px;
+	text-align:center;
+	font-size:10px;
+	font-weight:bold;
+	color:#fff;
+	position:absolute;
+	left:367px;
+	top:100px;
+}
+#content .detail .learingLine ul li .book{
+	display:block;
+	width:220px;
+	height:100px;
+	font-size:10px;
+	font-weight:bold;
+	color:#fff;
+	//background:url('../images/resume/timeLine_tool_lb.gif') 0 0 no-repeat;
+}
+#content .detail .learingLine ul li.num1 .book{
+	background:url('../images/resume/timeLine_tool_lb.gif') 0 0 no-repeat;
+	padding-top:15px;
+	padding-left:10px;
+	position:absolute;
+	left:110px;
+	top:100px;
+}
+#content .detail .learingLine ul li.num2 .book{
+	background:url('../images/resume/timeLine_tool_rb.gif') 0 0 no-repeat;
+	padding-top:10px;
+	padding-left:10px;
+	position:absolute;
+	left:480px;
+	top:100px;
+}
+#content .detail .learingLine ul li.num3 .book{
+	background:url('../images/resume/timeLine_tool_lm_02.gif') 0 0 no-repeat;
+	padding-top:10px;
+	padding-left:2px;
+	position:absolute;
+	left:85px;
+	top:85px;
+}
+#content .detail .learingLine ul li.num4 .book{
+	background:url('../images/resume/timeLine_tool_rs.gif') 0 0 no-repeat;
+	padding-top:7px;
+	padding-left:20px;
+	position:absolute;
+	left:480px;
+	top:100px;
+}
+#content .detail .learingLine ul li.num5 .book{
+	background:url('../images/resume/timeLine_tool_lm_03.gif') 0 0 no-repeat;
+	padding-top:10px;
+	padding-left:30px;
+	position:absolute;
+	left:100px;
+	top:100px;
+}
+#content .detail .learingLine ul li.num6 .book{
+	background:url('../images/resume/timeLine_tool_rm.gif') 0 0 no-repeat;
+	padding-top:10px;
+	padding-left:20px;
+	position:absolute;
+	left:480px;
+	top:100px;
+}
+#content .detail .learingLine ul li.num7 .book{
+	background:url('../images/resume/timeLine_tool_lb.gif') 0 0 no-repeat;
+	padding-top:15px;
+	padding-left:5px;
+	position:absolute;
+	left:115px;
+	top:90px;
+}
+#content .detail .learingLine ul li.num8 .book{
+	background:url('../images/resume/timeLine_tool_rb.gif') 0 0 no-repeat;
+	padding-top:10px;
+	padding-left:20px;
+	position:absolute;
+	left:480px;
+	top:100px;
+}
 
 
 
