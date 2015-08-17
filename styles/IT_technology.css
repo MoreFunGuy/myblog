@@ -1,0 +1,66 @@
+
+#content{
+	width:930px;
+	height:2000px;
+	margin:0 auto;
+}
+#content .nav{
+	width:225px;
+	height:100%;
+	background:#152840;
+}
+#content .wrap{
+	width:700px;
+	height:100%;
+	background:#fff;
+}
+#content .nav ul li{
+	width:225px;
+	//border:1px solid #fff;
+}
+#content .nav ul li .nav_header{
+	width:100%;	
+	height:60px;
+	line-height:60px;
+	text-align:center;
+	color:#fff;
+	background:#263a54;
+	border-bottom:2px solid #152840;
+}
+#content .nav ul li .nav_header span{
+	display:inline-block;
+	width:18px;
+	height:18px;
+	background:url('../images/IT_technology/nav_btn.gif') 0 0 no-repeat;
+	margin-top:21px;
+	margin-right:20px;
+	transition:transform 0.4s linear 0.1s;
+}
+
+#content .nav ul li .nav_body{
+	width:225px;
+	background:#152840;
+	display:none;
+}
+#content .nav .nav_body ul li{
+	text-align:center;
+	//height:30px;
+	padding-top:10px;
+	//border:1px solid #fff;
+
+}
+
+#content .nav .nav_body ul li a{
+	color:#fff;
+	transition:color 0.2s linear 0s;
+	font-size:12px;
+}
+#content .nav .nav_body ul li a:hover{
+	color:#56ccc8;
+}
+
+
+
+
+
+
