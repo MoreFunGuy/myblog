@@ -27,19 +27,3 @@
 			$("#content .nav ul li .nav_header span:eq(2)").css("transform","rotate(90deg)");			
 		}	
 	})
-
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	

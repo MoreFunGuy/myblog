@@ -1,4 +1,3 @@
-
 #content{
 	width:930px;
 	height:1500px;
@@ -83,28 +82,11 @@
 	background:url('../images/IT_technology/search.gif') 0 0 no-repeat;
 	cursor:pointer;
 }
-/**文章主体内容**/
+
+/***主体内容**/
 #content .wrap{
 	width:700px;
 	height:100%;
 	background:#fff;
 }
-
-#content .wrap .article{
-	width:600px;
-	height:350px;
-	margin-top:50px;
-	margin-left:50px;
-	box-shadow:10px 10px 20px #bbb;
-}
-
-
-
-
-
-
-
-
-
-
 
