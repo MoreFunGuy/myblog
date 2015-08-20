@@ -1,13 +1,13 @@
 
 #content{
 	width:930px;
-	height:1500px;
+	height:1200px;
 	margin:0 auto;
 }
 /**导航栏***/
 #content .nav{
 	width:225px;
-	height:1450px;
+	height:1150px;
 	background:#152840;
 	padding-top:50px;
 }
@@ -91,16 +91,34 @@
 }
 
 #content .wrap .article{
-	width:600px;
-	height:350px;
-	margin-top:50px;
+	width:540px;
+	height:240px;
+	margin-top:30px;
 	margin-left:50px;
 	box-shadow:10px 10px 20px #bbb;
+	padding:30px;
 }
-
-
-
-
+#content .wrap .article h2{
+	margin-bottom:30px;
+	//color:#022e63;
+}
+#content .wrap .article h2 a{
+	color:#022e63;
+}
+#content .wrap .article h2 a:hover{
+	text-decoration:underline;
+}
+#content .wrap .article p{
+	color:#898989;
+	line-height:25px;
+}
+#content .wrap .article p a{
+	color:#898989;
+	transition:color 0.3s linear 0s;
+}
+#content .wrap .article p a:hover{
+	color:#1b579e;
+}
 
 
 
