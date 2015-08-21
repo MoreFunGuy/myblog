@@ -14,8 +14,10 @@
 			#disc h2{color:#022e63;margin-bottom:20px;}
 			#disc p{color:#898989;};
 			#bigger{}
-			#bigger .sPic{width:200px;height:240px;background:#ccc;margin-left:20px;}
-			#bigger .bPic{width:400px;height:500px;background:#ccc;margin-left:50px;}
+			#bigger .sPic{width:250px;height:280px;background:url('../../../images/works/ironman_s.jpg') 0 0 no-repeat;border:1px solid #000;margin-left:20px;position:relative;}
+			#bigger .bPic{width:350px;height:350px;background:url('../../../images/works/ironman.jpg') 0 0 no-repeat;margin-left:20px;display:none;}
+			#mask{position:absolute;width:125px;height:140px;background:#ffa;opacity:0.5;cursor:move;display:none;}
+			#fullmask{position:absolute;width:250px;height:280px;background:#000;top:0;left:0;opacity:0;cursor:move;}
 		</style>
 		<script src="../../../scripts/jquery-2.1.4.js"></script>
 	</head>
@@ -32,7 +34,7 @@
 							<div class="list_body_head trans">作品</div>
 							<div class="list_body_body trans" id="works">
 								<ul>
-									<li><a href="#" class="trans">别踩白块</a></li>
+									<li><a href="../games/testBlackbox.html" class="trans">别踩白块</a></li>
 									<li><a href="#" class="trans">2048</a></li>
 									<li><a href="#" class="trans">轮播图</a></li>
 								</ul>
@@ -104,7 +106,7 @@
 						<div class="nav_header">小游戏<span class="right"></span></div>
 						<div class="nav_body">
 							<ul>
-								<li><a href="#">别踩白块</a></li>
+								<li><a href="../games/testBlackbox.html">别踩白块</a></li>
 								<li><a href="#">2048</a></li>
 								<li><a href="#">俄罗斯方块</a></li>
 							</ul>
@@ -127,8 +129,11 @@
 					<p>将鼠标放在小图片上滑动，右侧会出现产品的大图，更加清晰的看到产品的细节。</p>
 				</div>
 				<div id="bigger">
-					<div class="sPic left"></div>
-					<div class="bPic left"></div>
+					<div class="sPic left">
+						<div id="mask"></div>
+						<div id="fullmask"></div>
+					</div>
+					<div class="bPic left" id="lgimgContainer"></div>
 				</div>
 			</div>
 		</div>
@@ -136,6 +141,35 @@
 		<script src="../../../scripts/index_another.js"></script>
 		<script src="../../../scripts/works.js"></script>
 		<script>
+			var mask = document.getElementById("mask");
+			var fullMask = document.getElementById("fullmask");
+			var lgImgContainer = document.getElementById("lgimgContainer");
+			
+			fullMask.onmousemove = function(event){
+				/***更改半透明遮罩层的位置**/
+				var left = event.offsetX-125/2;
+				left = left<0?0:left;
+				left = left>125?125:left;
+				var top = event.offsetY-140/2;
+				top = top<0?0:top;
+				top = top>140?140:top;
+				
+				mask.style.left = left+"px";
+				mask.style.top = top+"px";
+				
+				lgImgContainer.style.backgroundPositionX = -740*left/250+'px';
+				lgImgContainer.style.backgroundPositionY = -830*top/280+'px';
+			}
+			fullMask.onmouseover = function(){
+				lgImgContainer.style.display = "block";
+				mask.style.display = "block";
+			}
+			fullMask.onmouseout = function(){
+				lgImgContainer.style.display = "none";
+				mask.style.display = "none";
+			}
+			
+			
 		</script>
 	</body>
 </html>
